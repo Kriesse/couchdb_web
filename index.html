@@ -15,11 +15,23 @@
     <div class="content">
       <header>
         <blockquote cite="http://jacobian.org/writing/of-the-web/">
-          “Django may be built <em>for</em> the Web, but CouchDB is built <em>of</em> the Web.
-          ... CouchDB makes Django look old-school in the same way that Django makes ASP look outdated.”<br />
-          
+          “I’ve never seen software that so completely embraces the philosophies behind HTTP... this is what the software of the future looks like.”<br />
           — <a href="http://jacobian.org/writing/of-the-web/" target="_blank">Jacob Kaplan-Moss, Django creator</a>
         </blockquote>
+
+        
+        <div id="intro">
+          Goodbye, schemas and SQL.
+          Hello, JSON and MapReduce.
+          CouchDB is a database built for the web.
+        </div>
+      </header>
+      
+    </div>
+  </div>
+  <div id="filling">
+    <div class="content">
+      <div class="colwrapper">
         <nav>
           <div>
             <h3>Get it</h3>
@@ -35,6 +47,7 @@
             <ul>
               <li><a href="screenshots.html">Screenshots</a></li>
               <li><a href="demo.html">Live demo</a></li>
+              <li><a href="wild.html">In the wild</a></li>
             </ul>
           </div>
           <div>
@@ -48,7 +61,7 @@
             </ul>
           </div>
           <div>
-            <h3>Support it</h3>
+            <h3>Contribute</h3>
             <ul>
               <li><a href="subversion.html">Subversion</a></li>
               <li><a href="issues.html">Issue tracking</a></li>
@@ -58,62 +71,20 @@
             </ul>
           </div>
         </nav>
-        
-        <div id="intro">
-          Goodbye, schemas and SQL.
-          Hello, JSON and MapReduce.
-          CouchDB is a database built for the web.
-        </div>
-      </header>
-      
-    </div>
-  </div>
-  <div id="filling">
-    <div class="content">
-      <div class="colwrapper">
-        <aside>
-          <p>
-            You're designing for the modern world.
-            Here, needs change, and fast.
-            You have to produce solutions quickly,
-            and they have to be updatable at a moment's notice.
-            It's running on your laptop now,
-            but next year it'll be running on a multi-terabyte cluster.
-          </p>
-          <p>
-            For such demands, you need the right tools.
-            You're pretty happy with your server-side framework and your JavaScript toolkit,
-            but that relational database ...
-            it chops up your business objects,
-            it bites you when you shake things up,
-            and SQL doesn't play nicely with your scripting language
-            &mdash; this sledgehammer has never sat comfortably in your toolbox.
-          </p>
-          <p>
-            You want a database that understands <em>objects</em>.
-            You want to talk to it in your native language.
-            It should accept the odd new attribute without balking.
-            And it should offer all the scalability and reliability that kept you hanging onto that RDBMS.
-          </p>
-          <p>
-            <b>Enter CouchDB.</b>
-          </p>
-        </aside>
         <article>
           <section>
             <h3>Flexible</h3>
             <p>
-              Start saving your data today, and <strong>adapt your queries as your application evolves</strong>, without migrating data formats.
+              Start saving your data today, then <strong>adapt your queries as your application evolves</strong>, without expensive schema migrations.
               Query your data using familiar JavaScript (or your language of choice).
-              CouchDB's views are <strong>optimized for real-time</strong>, rather than batch, workloads.
-              Its MVCC data model is suitable for concurrent operations that require <strong>consistency</strong>.
+              CouchDB's <strong>incremental Map Reduce</strong> views are <strong>optimized for real-time</strong> workloads, not overnight batch jobs.
             </p>
           </section>
           <section>
             <h3>Web scale</h3>
             <p>
-              CouchDB can <strong>scale</strong> from a smartphone to a data-center.
-              Erlang and REST present the <strong>same, simple API</strong>
+              CouchDB scales from a smartphone to a data-center, and beyond.
+              The Erlang and REST-based implementation presents the <strong>same, simple API</strong>
               whether running on a small local instance,
               an ad-hoc network of collaborators,
               or a multi-terabyte eventually-consistent cluster.
@@ -122,21 +93,16 @@
           <section>
             <h3>Reliable</h3>
             <p>
-              <strong>Committed updates are durable:</strong>
-              CouchDB uses append-only storage, never touching any bytes already written to disk.
-              Even truncating a CouchDB database file yields a <strong>consistent snapshot</strong> of an older version of the database.
-              Writes are contiguous, giving CouchDB predictable performance even under heavily concurrent write load.
+                CouchDB uses append-only storage for <strong>extreme durability</strong>. It never touches any bytes already written to disk, so even truncating a CouchDB database file yields a <strong>consistent snapshot</strong> of an older version of the database.
+              Writes are contiguous, giving CouchDB <strong>predictable performance</strong> even under heavily concurrent write load. The MVCC data model is ideal for concurrent operations that require <strong>consistency</strong>.
             </p>
           </section>
           <section>
             <h3>Ground computing</h3>
             <p>
-              Write <strong>offline-capable applications</strong> using a simple document model:
-              CouchDB solves the data-island problem for you.
-              <strong>Peer-based replication</strong> allows for flexible deployments,
-              data-sharing between organizations, and no-hassle backups.
-              Running <strong>CouchDB on the client</strong> with continuous replication to remote servers
-              offers better latency and reliability than traditional three-tier architectures.
+              CouchDB solves the data-island problem, so you can <strong>write offline capable applications</strong>. 
+              Peer-based replication allows for flexible deployments, data-sharing between organizations, and no-hassle backups. 
+              CouchDB on the client offers <strong>better latency and reliability than traditional three-tier architectures</strong>. Ground computing is the future of the web.
             </p>
           </section>
           <section>
