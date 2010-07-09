@@ -1,4 +1,37 @@
 header, footer, nav, article, section, aside { display: block; }
+
+#header {
+  background: none repeat scroll 0 0 #3E3E2E;
+  border-bottom: 1px solid #333333;
+}
+
+#header a { color: transparent; }
+
+#breadcrumbs {
+  background: none repeat scroll 0 0 #E4E4E4;
+  border-bottom: 1px solid #999999;
+  border-top: 1px solid #FFFFFF;
+  color: #666666;
+  padding-left: 14em;
+}
+
+#breadcrumbs ul {
+  font-size: 90%;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0.3em 1em;
+}
+
+#breadcrumbs li {
+display: inline;
+padding: 0 0.5em;
+}
+
+#breadcrumbs li.active a {
+  color: #999999;
+  text-decoration: none;
+}
+
 body {
   margin: 0; 
   background-color: #aee; 
@@ -8,7 +41,7 @@ body {
 /*  font-size: 14px;*/
   line-height: 21px;
   font: 1em Georgia, serif;
-  }
+}
 div.content, footer { width:  987px; margin: 0 auto 0 auto; }
 div#topslice {
   background-image: url("background.png");
@@ -16,22 +49,22 @@ div#topslice {
   background-repeat: no-repeat;
   height: 699px;
   padding-bottom: 55px;
-  }
+}
 h1,h2,h3,h4,h5,h6 {
   font-family: Arial, sans-serif;
   text-shadow: white 2px 1px 1px;
-  }
+}
 h3 { font-size: 1.5em; }
 header {
   border: 0;
   border-top: 21px solid #bd101d;
-  }
+}
 header blockquote {
   margin: 20px 0 0 0;
   width: 323px;
   float: right;
   color: #506b6b;
-  }
+}
 /*nav {
   font-family: CandelaBold;
   width: 480px;
@@ -42,14 +75,14 @@ header nav div {
   float: left;
   width: 120px;
   text-align: right;
-  }
+}
 header nav div:nth-child(2) { position: relative; left: -20px; }
 header nav div:nth-child(3) { position: relative; left: -25px; }
 
 header nav div ul {
   padding: 0;
   list-style-type: none;
-  }
+}
 header nav a.active { border-bottom: 1px dotted black; } /* I don't like this */
 /*header nav div:hover > h3 { position: relative; top: -2px; text-shadow: white 1px 3px 1px; }*/
 header div#intro {
@@ -60,7 +93,7 @@ header div#intro {
 /*  font-family: CandelaBold, Arial, sans-serif;*/
   font-size: 32px;
   line-height: 48px;
-  }
+}
 a:link, a:hover, a:visited { text-decoration: none; color: black; }
 a:hover { text-shadow: white 2px 1px 1px; }
 
@@ -70,20 +103,20 @@ div#filling {
   border-width: 1px 0 1px 0;*/
 /*  background-color: #ace8e8; */
 /*  padding: 55px 0 55px 0;*/
-  }
+}
 div#filling div.colwrapper nav { 
   font-size: 16px;
   line-height: 21px;
   width: 377px;
   float: left;
-  }
+}
 div#filling div.colwrapper article { width: 555px; float: right; }
 
 div#bottomslice {
-  }
+}
 
 footer {
 /*  font-family: CandelaBook, Arial, sans-serif;*/
   border-bottom: 3px solid #255757;
   padding: 21px 0 21px 0;
-  }
+}

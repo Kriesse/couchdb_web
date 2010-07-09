@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>CouchDB | time to relax.</title>
+  
+  <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/candela/stylesheet.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="css/site.css" type="text/css" charset="utf-8" />
+</head>
+
+<body>
+  <div id="header">
+    <a href="./index.html">
+      <img src="./couchdb-logo-header.png" width="400" height="110" alt="CouchDB - Relax">
+    </a>
+  </div>
+
+  <div id="breadcrumbs">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>»</li>
+      <li class="active"><a href="downloads.html">Downloads</a></li>
+    </ul>
+  </div>
+
+  <div id="filling">
+    <div class="content">
+      <div class="colwrapper">
+
+        <nav>
+          <div>
+            <h3>Get it</h3>
+            <ul>
+              <li><a href="download.html">Download it</a></li>
+              <li><a href="previous.html">Previous releases</a></li>
+              <li><a href="pacman.html">Package managers</a></li>
+
+              <li><a href="subversion.html">Subversion</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>See it</h3>
+            <ul>
+              <li><a href="screenshots.html">Screenshots</a></li>
+
+              <li><a href="demo.html">Live demo</a></li>
+              <li><a href="wild.html">In the wild</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Learn it</h3>
+            <ul>
+
+              <li><a href="overview.html">Overview</a></li>
+              <li><a href="wiki.html">Wiki</a></li>
+              <li><a href="books.html">Books</a></li>
+              <li><a href="planet.html">Planet</a></li>
+              <li><a href="mailing.html">Mailing lists</a></li>
+            </ul>
+
+          </div>
+          <div>
+            <h3>Contribute</h3>
+            <ul>
+              <li><a href="subversion.html">Subversion</a></li>
+              <li><a href="issues.html">Issue tracking</a></li>
+              <li><a href="committers.html">Committers</a></li>
+
+              <li><a href="coding.html">Coding standards</a></li>
+              <li><a href="promote.html">Promote it</a></li>
+            </ul>
+          </div>
+        </nav>
+        <article>
+          <section>
+            <h1>Downloads</h1>
+              <p>
+                The following releases of Apache CouchDB are available for download.
+              </p>
+
+            <h2>Current Releases</h2>
+            <h3>0.11.0</h3>
+
+            <h4>Files</h4>
+
+            <ul>
+              <li>
+                <a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.11.0/apache-couchdb-0.11.0.tar.gz">apache-couchdb-0.11.0.tar.gz</a>
+    [<a href="http://www.apache.org/dist/couchdb/0.11.0/apache-couchdb-0.11.0.tar.gz.asc">OpenPGP</a>]
+                [<a href="http://www.apache.org/dist/couchdb/0.11.0/apache-couchdb-0.11.0.tar.gz.md5">MD5</a>]
+                [<a href="http://www.apache.org/dist/couchdb/0.11.0/apache-couchdb-0.11.0.tar.gz.sha">SHA</a>]
+              </li>
+            </ul>
+
+            <h4>Changes</h4>
+            <p>
+              This version is a feature-freeze release candidate for Apache CouchDB 1.0.
+            </p>
+            <ul>
+              <li>Added support for building a Windows installer as part of &#8216;make dist&#8217;.</li>
+              <li>Added optional &#8216;raw&#8217; binary collation for faster view builds where Unicode collation is not important.</li>
+              <li>Improved view index build time by reducing ICU collation callouts.</li>
+              <li>Added option to implicitly create replication target databases.</li>
+              <li>Improved view information objects.</li>
+              <li>Bug fix for partial updates during view builds.</li>
+              <li>Bug fix for building couch.app&#8217;s module list.</li>
+              <li>Fixed a problem with statistics timers and system sleep.</li>
+              <li>Improved the statistics calculations to use an online moving window algorithm.</li>
+              <li>Adds batching of multiple updating requests, to improve throughput with many writers.</li>
+              <li>Removed the now redundant couch_batch_save module.</li>
+              <li>Bug fix for premature termination of chunked responses.</li>
+              <li>Improved speed and concurrency of config lookups.</li>
+              <li>Fixed an edge case for HTTP redirects during replication.</li>
+              <li>Fixed HTTP timeout handling for replication.</li>
+              <li>Fixed query parameter handling in OAuth&#8217;d replication.</li>           <li>Fixed a bug preventing mixing languages with lists and views.</li>
+              <li>Avoid OS process leaks in lists.</li>
+              <li>Avoid leaking file descriptors on automatic replication restarts.</li>
+              <li>Various improvements to the Futon UI.</li>
+              <li>Provide Content-MD5 header support for attachments.</li>
+              <li>Adds configurable compression of attachments.</li>
+              <li>Added default cookie-authentication and users db.</li>
+              <li>Added per-db reader access control lists.</li>
+              <li>Added per-db security object for configuration data in validation functions.</li>
+              <li>Added URL Rewriter handler.</li>
+              <li>Added proxy authentication handler.</li>
+              <li>Added ability to replicate documents by id.</li>
+              <li>Added virtual host handling.</li>
+              <li>Uses json2.js for JSON serialization compatiblity with native JSON.</li>
+              <li>Fixed CVE-2010-0009: Apache CouchDB Timing Attack Vulnerability.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>0.10.2</h3>
+
+            <h4>Files</h4>
+            <ul>
+              <li>
+                <a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.10.2/apache-couchdb-0.10.2.tar.gz">apache-couchdb-0.10.2.tar.gz</a>
+                [<a href="http://www.apache.org/dist/couchdb/0.10.2/apache-couchdb-0.10.2.tar.gz.asc">OpenPGP</a>]
+                [<a href="http://www.apache.org/dist/couchdb/0.10.2/apache-couchdb-0.10.2.tar.gz.md5">MD5</a>]
+                [<a href="http://www.apache.org/dist/couchdb/0.10.2/apache-couchdb-0.10.2.tar.gz.sha">SHA</a>]
+              </li>
+            </ul>
+
+            <h4>Changes</h4>
+
+            <ul>
+              <li>Fixed CVE-2010-0009: Apache CouchDB Timing Attack Vulnerability.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>0.10.1</h3>
+
+            <h4>Files</h4>
+            <ul>
+              <li>
+                <a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.10.1/apache-couchdb-0.10.1.tar.gz">apache-couchdb-0.10.1.tar.gz</a>
+                [<a href="http://www.apache.org/dist/couchdb/0.10.1/apache-couchdb-0.10.1.tar.gz.asc">OpenPGP</a>]
+                [<a href="http://www.apache.org/dist/couchdb/0.10.1/apache-couchdb-0.10.1.tar.gz.md5">MD5</a>]
+                [<a href="http://www.apache.org/dist/couchdb/0.10.1/apache-couchdb-0.10.1.tar.gz.sha">SHA</a>]
+              </li>
+            </ul>
+
+            <h4>Changes</h4>
+
+            <ul>
+              <li>Fixed test suite to work with build system.</li>
+               <li>Fixed a problem with statistics timers and system sleep.</li>               <li>Fixed an edge case for HTTP redirects during replication.</li>
+<li>Fixed HTTP timeout handling for replication.</li>
+               <li>Fixed query parameter handling in OAuth&#8217;d replication.</li>           <li>Fixed a bug preventing mixing languages with lists and views.</li>          <li>Avoid OS process leaks in lists.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>0.10.0</h3>
+
+            <h4>Files</h4>
+            <ul>
+              <li>
+              <a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.10.0/apache-couchdb-0.10.0.tar.gz">apache-couchdb-0.10.0.tar.gz</a>
+              [<a href="http://www.apache.org/dist/couchdb/0.10.0/apache-couchdb-0.10.0.tar.gz.asc">OpenPGP</a>]
+              [<a href="http://www.apache.org/dist/couchdb/0.10.0/apache-couchdb-0.10.0.tar.gz.md5">MD5</a>]
+              [<a href="http://www.apache.org/dist/couchdb/0.10.0/apache-couchdb-0.10.0.tar.gz.sha">SHA</a>]
+              </li>
+            </ul>
+
+            <h4>Changes</h4>
+
+            <p>This release contains <a href="http://wiki.apache.org/couchdb/Breaking_changes">backwards incompatible changes</a>.</p>
+
+
+            <ul>
+              <li>General performance improvements.</li>
+              <li>View index generation speedups.</li>
+              <li>Even more robust storage format.</li>
+              <li>Native Erlang Views for high-performance applications.</li>
+              <li>More robust push and pull replication.</li>
+              <li>Two-legged OAuth Support for applications and replication (three legged in preparation).</li>
+              <li>Cookie Authentication.</li>
+              <li>API detail improvements.</li>
+              <li>Better RFC 2616 (HTTP 1.1) compliance.</li>
+              <li>Added modular configuration file directories.</li>
+              <li>Miscellaneous improvements to build, system integration, and portability.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Archived Releases</h2>
+
+            <p>Old Apache CouchDB releases can be found here:</p>
+
+            <ul>
+              <li><a href="http://archive.apache.org/dist/couchdb/">Apache CouchDB archive</a></li>
+            </ul>
+
+            <p>Even older Apache Incubator releases of CouchDB can be found here:</p>
+
+            <ul>
+              <li><a href="http://archive.apache.org/dist/incubator/couchdb/">Apache Incubator archive of CouchDB</a></li>
+            </ul>
+
+            <p>These are provided for references purposes only. It is recommended you use a current release of CouchDB.</p>
+          </section>
+
+          <section>
+            <h2>Verifying Releases</h2>
+            <p>
+              When downloading from a mirror please check the <a href="http://www.apache.org/dev/release-signing#md5">MD5</a> and <a href="http://www.apache.org/dev/release-signing#sha-checksum">SHA</a> checksums as well as verifying the <a href="http://www.apache.org/dev/release-signing#openpgp">OpenPGP</a> compatible signature available from the main Apache site. The <a href="http://www.apache.org/dist/couchdb/KEYS">KEYS</a> file contains the public keys used for signing release. It is recommended that a <a href="http://www.apache.org/dev/release-signing#web-of-trust">web of trust</a> is used to confirm the identity of these keys.
+            </p>
+
+            <p>You can check the OpenPGP signature with:</p>
+            <pre><code>gpg --verify apache-couchdb-*.tar.gz.asc</code></pre>
+
+            <p>You can check the MD5 checksum with:</p>
+            <pre><code>md5sum --check apache-couchdb-*.tar.gz.md5</code></pre>
+
+            <p>You can check the SHA checksum with:</p>
+            <pre><code>sha1sum --check apache-couchdb-*.tar.gz.sha</code></pre>
+          </section>
+        </article>
+      </div>
+    </div>
+  </div>
+  <div id="bottomslice">
+    <footer>
+      <strong>&copy Apache Software Foundation 2008&ndash;10.</strong>
+    </footer>
+  </div>
+</body>
+</html>
