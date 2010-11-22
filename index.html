@@ -1,126 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<title>CouchDB | time to relax.</title>
+  <title>CouchDB | time to relax.</title>
   
   <link rel="icon" href="favicon.png" />
-	<link rel="stylesheet" href="css/candela/stylesheet.css" type="text/css" charset="utf-8" />
-  <link rel="stylesheet" href="css/site.css" type="text/css" charset="utf-8" />
+  
+  <link rel="stylesheet" href="css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="css/typography.css" type="text/css" />
+  <link rel="stylesheet" href="css/custom.css" type="text/css" />
 </head>
 
 <body>
-  <div id="topslice">
-    <div class="content">
-      <header>
-        <blockquote cite="http://jacobian.org/writing/of-the-web/">
-          “I’ve never seen software that so completely embraces the philosophies behind HTTP... this is what the software of the future looks like.”<br />
-          — <a href="http://jacobian.org/writing/of-the-web/" target="_blank">Jacob Kaplan-Moss, Django creator</a>
-        </blockquote>
 
-        
-        <div id="intro">
+  <header>
+    <div class="header_inner">
+      <blockquote cite="http://jacobian.org/writing/of-the-web/">
+        <p>
+          “I’ve never seen software that so completely embraces the philosophies behind HTTP... this is what the software of the future looks like.”
+        </p>
+        <a href="http://jacobian.org/writing/of-the-web/" target="_blank">&mdash; Jacob Kaplan-Moss, Django creator</a>
+      </blockquote>
+
+      <h1 class="logo">
+        <a href="/" title="Home">
+          CouchDB
+          relax
+        </a>
+      </h1>
+    </div>
+  </header>
+
+  <section class="stage">
+    <div class="stage_inner">
+      <div class="teaser">
+        <p class="intro">
           Goodbye, schemas and SQL.
           Hello, JSON and MapReduce.
           CouchDB is a database built for the web.
-        </div>
-      </header>
-      
-    </div>
-  </div>
-  <div id="filling">
-    <div class="content">
-      <div class="colwrapper">
-        <nav>
-          <div>
-            <h3>Get it</h3>
-            <ul>
-              <li><a href="download.html">Download it</a></li>
-              <li><a href="previous.html">Previous releases</a></li>
-              <li><a href="pacman.html">Package managers</a></li>
-              <li><a href="subversion.html">Subversion</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>See it</h3>
-            <ul>
-              <li><a href="screenshots.html">Screenshots</a></li>
-              <li><a href="demo.html">Live demo</a></li>
-              <li><a href="wild.html">In the wild</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Learn it</h3>
-            <ul>
-              <li><a href="overview.html">Overview</a></li>
-              <li><a href="wiki.html">Wiki</a></li>
-              <li><a href="books.html">Books</a></li>
-              <li><a href="planet.html">Planet</a></li>
-              <li><a href="mailing.html">Mailing lists</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Contribute</h3>
-            <ul>
-              <li><a href="subversion.html">Subversion</a></li>
-              <li><a href="issues.html">Issue tracking</a></li>
-              <li><a href="committers.html">Committers</a></li>
-              <li><a href="coding.html">Coding standards</a></li>
-              <li><a href="promote.html">Promote it</a></li>
-            </ul>
-          </div>
-        </nav>
-        <article>
-          <section>
-            <h3>Flexible</h3>
-            <p>
-              Start saving your data today, then <strong>adapt your queries as your application evolves</strong>, without expensive schema migrations.
-              Query your data using familiar JavaScript (or your language of choice).
-              CouchDB's <strong>incremental Map Reduce</strong> views are <strong>optimized for real-time</strong> workloads, not overnight batch jobs.
-            </p>
-          </section>
-          <section>
-            <h3>Web scale</h3>
-            <p>
-              CouchDB scales from a smartphone to a data-center, and beyond.
-              The Erlang and REST-based implementation presents the <strong>same, simple API</strong>
-              whether running on a small local instance,
-              an ad-hoc network of collaborators,
-              or a multi-terabyte eventually-consistent cluster.
-            </p>
-          </section>
-          <section>
-            <h3>Reliable</h3>
-            <p>
-                CouchDB uses append-only storage for <strong>extreme durability</strong>. It never touches any bytes already written to disk, so even truncating a CouchDB database file yields a <strong>consistent snapshot</strong> of an older version of the database.
-              Writes are contiguous, giving CouchDB <strong>predictable performance</strong> even under heavily concurrent write load. The MVCC data model is ideal for concurrent operations that require <strong>consistency</strong>.
-            </p>
-          </section>
-          <section>
-            <h3>Ground computing</h3>
-            <p>
-              CouchDB solves the data-island problem, so you can <strong>write offline capable applications</strong>. 
-              Peer-based replication allows for flexible deployments, data-sharing between organizations, and no-hassle backups. 
-              CouchDB on the client offers <strong>better latency and reliability than traditional three-tier architectures</strong>. Ground computing is the future of the web.
-            </p>
-          </section>
-          <section>
-            <h3>Trusted</h3>
-            <p>
-              CouchDB is deployed by the <strong>BBC</strong>, Meebo, Cloudant and Ubuntu One.
-              It ships as a <strong>core feature of Ubuntu Linux.</strong>
-              There are access libraries available in nearly every language.
-            </p>
-          </section>
-        </article>
+        </p>
+        <a href="#" class="bob">
+          <span class="bob_big">Download</span>
+          <span>Get version 1.0.1 now</span>
+        </a>
       </div>
     </div>
+  </section>
+
+  <div class="main">
+      <nav class="sidebar">
+        <h3>Get it</h3>
+        <ul>
+          <li><a href="download.html">Download it</a></li>
+          <li><a href="previous.html">Previous releases</a></li>
+          <li><a href="pacman.html">Package managers</a></li>
+          <li><a href="subversion.html">Subversion</a></li>
+        </ul>
+      
+        <h3>See it</h3>
+        <ul>
+          <li><a href="screenshots.html">Screenshots</a></li>
+          <li><a href="demo.html">Live demo</a></li>
+          <li><a href="wild.html">In the wild</a></li>
+        </ul>
+
+        <h3>Learn it</h3>
+        <ul>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="wiki.html">Wiki</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="planet.html">Planet</a></li>
+          <li><a href="mailing.html">Mailing lists</a></li>
+        </ul>
+
+        <h3>Contribute</h3>
+        <ul>
+          <li><a href="subversion.html">Subversion</a></li>
+          <li><a href="issues.html">Issue tracking</a></li>
+          <li><a href="committers.html">Committers</a></li>
+          <li><a href="coding.html">Coding standards</a></li>
+          <li><a href="promote.html">Promote it</a></li>
+        </ul>
+    </nav>
+  
+    <div class="content">
+      <article>
+        <section>
+          <h3>Flexible</h3>
+          <p>
+            Start saving your data today, then <strong>adapt your queries as your application evolves</strong>, without expensive schema migrations.
+            Query your data using familiar JavaScript (or your language of choice).
+            CouchDB's <strong>incremental Map Reduce</strong> views are <strong>optimized for real-time</strong> workloads, not overnight batch jobs.
+          </p>
+        </section>
+        <section>
+          <h3>Web scale</h3>
+          <p>
+            CouchDB scales from a smartphone to a data-center, and beyond.
+            The Erlang and REST-based implementation presents the <strong>same, simple API</strong>
+            whether running on a small local instance,
+            an ad-hoc network of collaborators,
+            or a multi-terabyte eventually-consistent cluster.
+          </p>
+        </section>
+        <section>
+          <h3>Reliable</h3>
+          <p>
+              CouchDB uses append-only storage for <strong>extreme durability</strong>. It never touches any bytes already written to disk, so even truncating a CouchDB database file yields a <strong>consistent snapshot</strong> of an older version of the database.
+            Writes are contiguous, giving CouchDB <strong>predictable performance</strong> even under heavily concurrent write load. The MVCC data model is ideal for concurrent operations that require <strong>consistency</strong>.
+          </p>
+        </section>
+        <section>
+          <h3>Ground computing</h3>
+          <p>
+            CouchDB solves the data-island problem, so you can <strong>write offline capable applications</strong>. 
+            Peer-based replication allows for flexible deployments, data-sharing between organizations, and no-hassle backups. 
+            CouchDB on the client offers <strong>better latency and reliability than traditional three-tier architectures</strong>. Ground computing is the future of the web.
+          </p>
+        </section>
+        <section>
+          <h3>Trusted</h3>
+          <p>
+            CouchDB is deployed by the <strong>BBC</strong>, Meebo, Cloudant and Ubuntu One.
+            It ships as a <strong>core feature of Ubuntu Linux.</strong>
+            There are access libraries available in nearly every language.
+          </p>
+        </section>
+      </article>
+    </div>
   </div>
-  <div id="bottomslice">
-      <footer>
-        <strong>&copy Apache Software Foundation 2008&ndash;10.</strong>
-      </footer>
-  </div>
+
+  <footer>
+    <nav class="footer_nav">
+      <p>&copy; Apache Software Foundation 2008&ndash;10.</p>
+    </nav>
+  </footer>
 </body>
 </html>

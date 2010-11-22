@@ -1,0 +1,263 @@
+header, footer, nav, article, section, aside {
+  display: block;
+}
+
+/* colors */
+/*
+#BD101D - dark red
+#E81818 - red
+#928F8B - footer brown
+#74716D - footer darker brown
+*/
+
+
+.grid {
+  background: transparent url(../img/grid.png) repeat -21px 0 !important;
+}
+
+body {
+  background: #ECEAE7 url(../img/bg_light.png) repeat 0 0;
+  text-shadow: 0 .0625em 0 #FFF;
+}
+
+/* links */
+
+a, 
+a:link, 
+a:visited {
+  color: #BD101D;
+  text-decoration: none;
+}
+
+a:hover, 
+a:active, 
+a:focus {
+  color: #E81818;
+  text-decoration: underline;
+}
+
+/* font-size reset */
+
+.logo {
+  font-size: 1em;
+}
+
+/* center on page */
+.header_inner,
+.logo,
+.stage_inner,
+.bob,
+.main, 
+.footer_nav {
+  margin: 0 auto;
+}
+
+/* full width */
+.stage_inner {
+  width: 60em;
+}
+
+/* inner width */
+.header_inner,
+.main, 
+.footer_nav {
+  width: 48.75em;
+}
+
+/* header */
+header {
+  /* background: transparent url(../img/bg_header_frontpage.png) repeat-x 0 100%;
+  */
+  background: -moz-linear-gradient(center bottom, rgba(40,34,26,.25) 2%,rgba(255,255,255,0) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.1, rgba(40,34,26,.25)),color-stop(1, rgba(255,255,255,0)));
+}
+
+.header_inner {
+  height: 18em;
+  border-top: .75em solid #BD101D;
+
+  background-color: #1a82f7;
+  background: url(images/radial_bg.png) center center no-repeat;
+
+  background: -moz-radial-gradient(center 45deg, circle farthest-side, #FFF 0%, rgba(255,255,255,0) 100%);
+  background: -webkit-gradient(radial, center center, 0, center center, 300, from(#FFF), to(rgba(255,255,255,0)));
+}
+
+/* logo */
+.logo {
+  width: 28.75em;
+  height: 10em;
+}
+
+.logo a {
+  clear: both;
+  width: 28.75em;
+  height: 12em;
+  background: transparent url("../img/couchdb_logo_big.png") no-repeat 0 0;
+  text-indent: -9999px;
+  display: block; 
+}
+
+.logo a:focus, 
+.logo a:hover, 
+.logo a:active {
+  background-position: 0 -100px;
+}
+
+/* frontpage quote */
+header blockquote {
+  width: 18.75em;
+  height: 6.25em;
+  margin: 0;
+  padding: .5em 0 0 30em;
+  color: #74716D;
+}
+
+header blockquote p {
+  margin-bottom: 0;
+  color: #74716D;
+  font-size: .875em;
+}
+
+header blockquote a {
+  display: block;
+  text-align: right;
+  font-size: .875em;
+}
+
+/* stage */
+section.stage {
+  padding: 1.5em 0;
+  background: #FFF;
+}
+
+.stage_inner {
+}
+
+.teaser {
+  width: 28.75em;
+  margin-top: -6em;
+  padding-top: 6em;
+  padding-left: 31.25em;
+  background: transparent url(../img/couchdb_illu_big.png) no-repeat 0 0;
+}
+
+.intro {
+  margin-bottom: .25em;
+}
+
+a.bob, 
+a.bob:link, 
+a.bob:visited {
+  color: #FFF;
+}
+
+a.bob:hover, 
+a.bob:active, 
+a.bob:focus {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.bob {
+  width: 14.75em;
+  padding: 0.5em .5em .25em .5em;
+  border: .75em solid #BD101D;
+  display: block;
+  line-height: 1;
+  background: #E81818;
+  overflow: hidden;
+}
+
+.bob span {
+  display: inline-block;
+  width: 34%;
+  padding-left: 2%;
+  float: left;
+  text-shadow: 0 -0.0625em 0 #000;
+}
+
+span.bob_big {
+  width: 62%;
+  font-size: 2em;
+}
+
+
+/* main content */
+
+.main {
+  margin-bottom: 3em;
+  padding: 3em 0;
+  overflow: hidden;
+}
+
+/* sidebar */
+.sidebar {
+  width: 13.75;
+  padding: 1.5em 0;
+  float: left;
+}
+
+.sidebar h3 {
+  padding: 0.1em .25em 0 .25em;
+  border-bottom: .0625em solid #928F8B;
+  border-bottom: .0625em solid rgba(40,34,26,.2);
+  font-size: 1em;
+  line-height: 1.4375em;
+  margin-bottom: 0;
+  color: #BD101D;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  padding-top: 0.25em;
+  border-top: .0625em solid #FFF;
+}
+
+.sidebar a, 
+.sidebar a:link, 
+.sidebar a:visited {
+  margin: 0 0 0.4em;
+  padding: 0.15em 0.5em;
+  font-size: .8751em;
+  line-height: 1;
+  background: #F6F5F4;
+  background: rgba(255,255,255,.4);
+  color: #74716D;
+  display: block;
+  -moz-border-radius: .5em;
+  -webkit-border-radius: .5em;
+  border-radius: .5em;
+}
+
+.sidebar a:hover, 
+.sidebar a:active, 
+.sidebar a:focus {
+  text-decoration: none;
+  background: #FFF;
+  color: #000;
+}
+
+.content {
+  width: 38.75em;
+  padding: 1.5em 0;
+  float: right;
+  background: #F6F5F4;
+  background: rgba(255,255,255,.4);
+}
+
+article {
+  padding: 0 1.25em;
+}
+
+/* footer */
+footer {
+  padding: 1.5em 0;
+  background: #928F8B url(../img/bg_dark.png) repeat 0 0;
+  color: #FFF;
+  text-shadow: 0 -0.0625em 0 #000;
+}
+
+.footer_nav {
+}
