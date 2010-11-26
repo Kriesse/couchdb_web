@@ -458,8 +458,8 @@ a:visited {
 
 /* main content */
 .main {
-  background: -moz-linear-gradient(center top, rgba(40,34,26,.15) 1%,rgba(255,255,255,0) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01, rgba(40,34,26,.15)),color-stop(1, rgba(255,255,255,0)));
+  background: -moz-linear-gradient(center top, rgba(40,34,26,.15) 1%,rgba(255,255,255,0) 9em);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.01, rgba(40,34,26,.15)),color-stop(.2, rgba(255,255,255,0)));
 }
 
 /* sidebar */
