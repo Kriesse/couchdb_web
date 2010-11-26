@@ -56,6 +56,12 @@ header {
   transition: all 0.3s ease;
 }
 
+.sidebar a:hover, 
+.sidebar a:active, 
+.sidebar a:focus {
+  background: #FFF;
+}
+
 /* content */
 
 .content {
