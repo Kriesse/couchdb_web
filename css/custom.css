@@ -64,27 +64,34 @@ a:focus {
 }
 
 /* header */
-header {
-  /* background: transparent url(../img/bg_header_frontpage.png) repeat-x 0 100%;
-  */
-}
-
 .header_inner {
   height: 16.5em;
   border-top: .75em solid #BD101D;
 }
 
+.header_inner_page {
+  height: 6em;
+}
+
 /* logo */
 .logo {
-  width: 28.75em;
-  height: 10em;
+  overflow: hidden;
 }
 
 .logo a {
   clear: both;
   width: 28.75em;
-  height: 12em;
+  height: 6em;
   background: transparent url("../img/couchdb_logo_big.png") no-repeat 0 0;
+  text-indent: -9999px;
+  display: block; 
+}
+
+.header_inner_page .logo a {
+  clear: both;
+  width: 100%;
+  height: 12em;
+  background: transparent url("../img/couchdb_logo_small.png") no-repeat 0 .4em;
   text-indent: -9999px;
   display: block; 
 }
@@ -185,16 +192,6 @@ span.bob_big {
   float: left;
 }
 
-/* 
-h3 height: 24px!! 
-
-21px lineheight = 21/14
-padding-top: 2px
-border-bottom: 1px
-
-
-*/
-
 .sidebar h3 {
   padding: 0.142857em .25em 0 .25em;
   border-bottom: .071428571em solid #928F8B;
@@ -247,15 +244,6 @@ article {
   padding: 0 1.25em;
 }
 
-article h3 {
-  border-bottom: .0625em solid #928F8B;
-}
-
-article h3 + p {
-  border-top: .0625em solid #FFF;
-  margin-top: -1.5em;
-  margin-bottom: 1.375em;
-}
 
 /* footer */
 footer {

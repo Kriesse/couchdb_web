@@ -13,14 +13,45 @@ h1, h2, h3, h4, h5, h6 {
   font-weight:normal;
 }
 
-h1, h2, h3 {
+h1 {
+  color: #BD101D;
+}
+
+h2, h3 {
   color: #74716D;
 }
 
 h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
-h2 {font-size:2em;margin-bottom:0.75em;}
+h2 {
+  padding-top: .71875em;
+  font-size:2em;
+  margin-bottom:0.75em;
+  border-top: 1px dotted #74716D;
+}
 h3 {font-size:1.5em;line-height:1;margin-bottom:1em;}
 h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+
+article h3 {
+  line-height: .958333em;
+  border-bottom: .0625em solid #928F8B;
+}
+
+article h3 + ol,
+article h3 + ul,
+article h3 + p {
+  border-top: .0625em solid #FFF;
+  margin-top: -1.5em;
+  margin-bottom: 1.375em;
+}
+
+article h3 + h4 {
+  border-top: .05208em solid #FFF;
+  margin-top: -1.25em;
+  padding-top: 1.25em;
+  margin-bottom: 1.19792em;
+}
+
+
 h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
 h6 {font-size:1em;font-weight:bold;}
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
