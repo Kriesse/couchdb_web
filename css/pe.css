@@ -14,8 +14,6 @@ a:visited {
 
 /* header */
 header {
-  /* background: transparent url(../img/bg_header_frontpage.png) repeat-x 0 100%;
-  */
   background: -moz-linear-gradient(center bottom, rgba(40,34,26,.25) 2%,rgba(255,255,255,0) 100%);
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0.1, rgba(40,34,26,.25)),color-stop(1, rgba(255,255,255,0)));
 }
@@ -23,6 +21,10 @@ header {
 .header_inner {
   background: -moz-radial-gradient(center 45deg, circle farthest-side, #FFF 0%, rgba(255,255,255,0) 100%);
   background: -webkit-gradient(radial, center center, 0, center center, 300, from(#FFF), to(rgba(255,255,255,0)));
+}
+
+.header_inner_page {
+  background: none;
 }
 
 .bob span {
@@ -68,14 +70,6 @@ header {
   background: rgba(255,255,255,.4);
 }
 
-article h3 {
-  border-bottom: .0625em solid rgba(40,34,26,.25);
-}
-
-article h3 + p {
-  margin-top: -1.5em;
-  margin-bottom: 1.375em;
-}
 
 /* footer */
 footer {

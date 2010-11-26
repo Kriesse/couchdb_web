@@ -34,6 +34,7 @@ h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
 article h3 {
   line-height: .958333em;
   border-bottom: .0625em solid #928F8B;
+  border-bottom: .0625em solid rgba(40,34,26,.25);
 }
 
 article h3 + ol,
@@ -50,7 +51,6 @@ article h3 + h4 {
   padding-top: 1.25em;
   margin-bottom: 1.19792em;
 }
-
 
 h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
 h6 {font-size:1em;font-weight:bold;}
@@ -89,52 +89,11 @@ caption {background:#eee;}
   font-size: 2em;
 }
 
-
-/* old */
-
-/*
-body {
-  font: 13px/1.5 Georgia,serif
+h1 + p,
+.first {
+  font-size: 1.2em;
+  line-height: 1.25; 
+  margin-bottom: 1.25em;
+  font-style: italic;
+  color: #74716D;
 }
-
-a:focus {
-  outline: 1px dotted
-}
-hr {
-  border: 0 #ccc solid;
-  border-top-width: 1px;
-  clear: both;
-  height: 0
-}
-h1 {
-  font-size: 25px
-}
-h2 {
-  font-size: 23px
-}
-h3 {
-  font-size: 21px
-}
-h4 {
-  font-size: 19px
-}
-h5 {
-  font-size: 17px
-}
-h6 {
-  font-size: 15px
-}
-ol {
-  list-style: decimal
-}
-ul {
-  list-style: disc
-}
-li {
-  margin-left: 30px
-}
-p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset {
-  margin-bottom: 20px
-}
-
-*/
